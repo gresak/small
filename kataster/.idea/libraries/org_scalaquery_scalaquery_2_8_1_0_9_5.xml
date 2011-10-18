@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.scalaquery_scalaquery_2.8.1_0.9.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.scalaquery/scalaquery_2.8.1/jars/scalaquery_2.8.1-0.9.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.scalaquery/scalaquery_2.8.1/srcs/scalaquery_2.8.1-0.9.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
