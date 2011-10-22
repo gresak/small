@@ -59,10 +59,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PdfText.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/util/PdfText.scala">
+      <file leaf-file-name="RunKataster.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunKataster.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="85" selection-start="789" selection-end="789" vertical-scroll-proportion="0.55689657">
+            <state line="13" column="21" selection-start="489" selection-end="489" vertical-scroll-proportion="0.3810345">
               <folding />
             </state>
           </provider>
@@ -83,8 +83,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadDAO.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/KDB.scala" />
         <option value="$PROJECT_DIR$/kataster.properties" />
-        <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunKataster.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/util/PdfText.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunKataster.scala" />
       </list>
     </option>
   </component>
@@ -338,6 +338,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gresak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -867,16 +871,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunKataster.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/util/PdfText.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="399" selection-end="399" vertical-scroll-proportion="0.35172415">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/util/PdfText.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunKataster.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="85" selection-start="789" selection-end="789" vertical-scroll-proportion="0.55689657">
+        <state line="13" column="21" selection-start="489" selection-end="489" vertical-scroll-proportion="0.3810345">
           <folding />
         </state>
       </provider>

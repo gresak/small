@@ -1,0 +1,22 @@
+(?<=Úèastník\správneho\svzahu:.*)\n\d+\s
+
+Vlastník\n\d+\s
+
+\n\d+\s\D
+
+vzahu.*\n\d+\s
+
+(?<=vzahu:.*)\n(?=\d+\s)
+
+\n(?=Úèastník\správneho\svzahu:.*\n\d+\s)
+
+
+
+Informatívny\svýpis.*\n.*\nmiesto\strvalého.*\n
+
+
+
+---
+\n(?=Úèastník právneho vzahu:.*\n\d+\s)
+
+
