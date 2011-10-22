@@ -12,8 +12,8 @@ object RunKataster {
     val pdfReportPath = ps.getProperty("zostava")
     val reportText = new PdfText(pdfReportPath)
     val dao = new LoadDAO()
-    val cnt = dao.loadReport(pdfReportPath, reportText.lines)
-    println("\n"+cnt.get+" lines inserted")
+    val id = dao.insertRawReport(pdfReportPath, reportText.txt)
+    println("\nInserted id = "+id.get)
   }
 
 }

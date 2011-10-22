@@ -4,7 +4,7 @@ import org.scalaquery.ql.{Query, SimpleFunction}
 import org.scalaquery.ql.extended.{ExtendedTable => Table}
 import org.scalaquery.ql.extended.MySQLDriver.Implicit._
 import org.scalaquery.session.Database.threadLocalSession
-import java.sql.Date
+import java.sql.{Clob, Date}
 
 object KDB {
 
@@ -24,7 +24,7 @@ object KDB {
 
     def dt_vznik = column[Date]("dt_vznik")
 
-    def tx_subor = column[String]("fName")
+    def tx_subor = column[String]("tx_subor")
 
     def * = id_nacitanie ~ dt_vznik ~ tx_subor
 
@@ -46,8 +46,22 @@ object KDB {
 
   }
 
+  object rawReport extends Table[(Long, Date, String, Clob)]("raw_report") {
+
+    def id_raw_report = column[Long]("id_raw_report", O.PrimaryKey, O.AutoInc)
+
+    def dt_vznik = column[Date]("dt_vznik")
+
+    def tx_subor = column[String]("tx_subor")
+
+    def clob_report = column[Clob]("clob_report")
+
+    def * = id_raw_report ~ dt_vznik ~ tx_subor ~ clob_report
+
+  }
+
   def insertedId: Some[Long] = {
-    val insertedIdFunction = SimpleFunction.nullary[Long]("LAST_INSERT_ID")
+    val insertedIdFunction = SimpleFunction.nullary[Long]("last_insert_id")
     new Some(Query(insertedIdFunction).first)
   }
 
