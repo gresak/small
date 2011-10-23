@@ -1,9 +1,7 @@
 <?xml version="1.0"?>
 <RegexProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Regex>\n(?=Účastník\správneho\svzťahu:.*\n\d+\s)</Regex>
-  <Input>Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
-Účastník právneho vzťahu: Vlastník
+  <Regex>(?s)\n(?=Účastník\správneho\svzťahu:.*\n\d+\s)</Regex>
+  <Input>Účastník právneho vzťahu: Vlastník
 1 VESELÁ ŠTEFÁNIA ,KYSUCKÉ NOVÉ MESTO ,NÁBREŽNÁ 908/17 20  / 19200
 Dátum narodenia : 10.10.1934
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
@@ -33,9 +31,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Dátum narodenia : 03.05.1959
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
-Informatívny výpis 1/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 8 BAJÁNEK JOZEF NESLUŠA č.846 30  / 19200
 Dátum narodenia : 19.04.1939
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
@@ -89,9 +84,6 @@ Titul nadobudnutia DAROVACIA ZMLUVA Č. V 2051/09 Z 26.1.2010 - 26/10
 23 MINDEK JÁN,NESLUŠA č.89 80  / 19200
 Dátum narodenia : 08.09.1935
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
-Informatívny výpis 2/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Účastník právneho vzťahu: Vlastník
 24 MÄKKÝ JÚLIUS r. MÄKKÝ, 02341, NESLUŠA, č. č.219, SR 20  / 19200
 Dátum narodenia : 16.08.1946
@@ -144,9 +136,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 37 MIČIANOVÁ ANNA R.ČERVEŇOVÁ RADOĽA ČS.203 60  / 19200
 Dátum narodenia : 15.04.1932
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
-Informatívny výpis 3/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Účastník právneho vzťahu: Vlastník
 38 ĎURIŠOVÁ ANNA,NESLUŠA č.890 25  / 19200
 Dátum narodenia : 10.09.1938
@@ -199,9 +188,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 50 ĎURIAK JÁN NESLUŠA ČS.770 60  / 19200
 Dátum narodenia : 21.08.1928
 PLOMBA VYZNAČENÁ NA ZÁKLADE Z - 1720/2010
-Informatívny výpis 4/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 21.08.1928
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
@@ -255,9 +241,6 @@ Dátum narodenia : 01.01.1955
 Titul nadobudnutia DAROVACIA ZMLUVA Č. V 1739/2009 Z10.11.2009
 Účastník právneho vzťahu: Vlastník
 63 GUCKÝ PETER,NESLUŠA,č.414 20  / 19200
-Informatívny výpis 5/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 27.12.1966
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
@@ -310,9 +293,6 @@ Dátum narodenia : 30.01.1951
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 77 Hlavatý Ľubomír r. Hlavatý, 023 41, NESLUŠA, č. 835, SR 40  / 19200
-Informatívny výpis 6/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 02.02.1963
 Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 30D 554/10 - 58/11
 Účastník právneho vzťahu: Vlastník
@@ -365,9 +345,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 89 HRUBÁ MÁRIA,NESLUŠA,č.707 30  / 19200
 Dátum narodenia : 29.10.1942
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
-Informatívny výpis 7/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Účastník právneho vzťahu: Vlastník
 90 HRUBÝ JURAJ,NESLUŠA,č.371 100  / 19200
 Dátum narodenia : 03.03.1938
@@ -422,9 +399,6 @@ CHUVAŇÁK PETER, NAR. 5.4.1963 V PODIELE 40/19200 K CELKU -296/10
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 Dátum narodenia : 01.10.1928
-Informatívny výpis 8/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 103 CHOVAŇÁK BLAŽEJ,NESLUŠA,č.769 20  / 19200
 Dátum narodenia : 01.10.1928
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
@@ -478,9 +452,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Dátum narodenia : 11.04.1923
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
-Informatívny výpis 9/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 116 MATÚŠ MIROSLAV ČS.1053 10  / 19200
 Dátum narodenia : 30.03.1966
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
@@ -534,9 +505,6 @@ Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 30D 165/2008 -403/08
 129 Purašová Iveta r. Tabačková, RUDINSKÁ, č. 106, SR 40  / 19200
 Dátum narodenia : 02.07.1963
 Titul nadobudnutia DAROVACIA ZMLUVA Č. V 161/10 Z 15.4.2010 -124/10
-Informatívny výpis 10/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Účastník právneho vzťahu: Vlastník
 130 JANTOŠÍK ALBÍN NESLUŠA č.179 40  / 19200
 Dátum narodenia : 02.03.1940
@@ -591,9 +559,6 @@ Dátum narodenia : 30.06.1931
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 143 GUCKÝ STANISLAV r. GUCKÝ, 98503, ČESKÉ BREZOVO, č. č.192, SR 20  / 19200
-Informatívny výpis 11/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 01.07.1963
 Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 21D 862/2008 -150/09
 Účastník právneho vzťahu: Vlastník
@@ -647,9 +612,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 156 JAROŠOVÁ VIERA r. KOPTÁKOVÁ, ČSA 1301/20, KYSUCKÉ NOVÉ 60  / 19200
 MESTO, SR
-Informatívny výpis 12/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 02.10.1962
 Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 15D 111/2006 -217/07
 Účastník právneho vzťahu: Vlastník
@@ -702,9 +664,6 @@ Dátum narodenia : 30.04.1953
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 169 KORMAN VLADIMÍR,NESLUŠA č.224 40  / 19200
-Informatívny výpis 13/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 25.05.1934
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
@@ -758,9 +717,6 @@ Dátum narodenia : 21.01.1939
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 182 VOJTAŠOVÁ VILMA,NESLUŠA č.853 40  / 19200
-Informatívny výpis 14/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 05.06.1921
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
@@ -814,9 +770,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 195 BACKOVÁ ANNA NESLUŠA č.922 60  / 19200
 Dátum narodenia : 31.12.1910
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
-Informatívny výpis 15/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Účastník právneho vzťahu: Vlastník
 196 LIPKA PETER ČS.423 80  / 19200
 Dátum narodenia : 01.09.1965
@@ -870,9 +823,6 @@ Dátum narodenia : 07.11.1929
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 210 ŠIGÚTOVÁ BRIGITA,NESLUŠA č.298 40  / 19200
-Informatívny výpis 16/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 05.10.1929
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
@@ -925,9 +875,6 @@ Dátum narodenia : 24.06.1951
 Titul nadobudnutia KÚPNO-PREDAJNÁ ZMLUVA Č. V 639/2007 ZO 4.6.2007 -167/07
 Účastník právneho vzťahu: Vlastník
 224 SLÍŽ AUGUSTÍN,NESLUŠA č.910 120  / 19200
-Informatívny výpis 17/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 01.04.1940
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
@@ -981,9 +928,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 238 ONDRÚŠKOVÁ JÚLIA,NESLUŠA č.964 24  / 19200
 Dátum narodenia : 24.02.1940
-Informatívny výpis 18/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 24.02.1940
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
@@ -1037,9 +981,6 @@ Dátum narodenia : 21.06.1924
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 252 NEKORANCOVÁ ANNA,NESLUŠA č.919 40  / 19200
-Informatívny výpis 19/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 27.05.1945
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
@@ -1092,9 +1033,6 @@ Dátum narodenia : 21.01.1923
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 268 PLEVKO PAVOL ČS.415 40  / 19200
-Informatívny výpis 20/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 20.11.1931
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
@@ -1155,9 +1093,6 @@ Dátum narodenia : 03.03.1932
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 Dátum narodenia : 09.01.1961
-Informatívny výpis 21/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 276 PÚČALA MILAN,NESLUŠA č.839 60  / 19200
 Dátum narodenia : 09.01.1961
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
@@ -1211,9 +1146,6 @@ Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 21D 639/08 - 243/09
 Dátum narodenia : 19.09.1933
 Účastník právneho vzťahu: Vlastník
 289 KAVČÁKOVÁ APOLONIA,NESLUŠA č.663 20  / 19200
-Informatívny výpis 22/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 26.02.1917
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
@@ -1267,9 +1199,6 @@ Dátum narodenia : 26.05.1935
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 302 GUMANČÍKOVÁ ĽUBICA r. GUMANČÍKOVÁ, HÁLKOVA č. 1127/11, 80  / 19200
-Informatívny výpis 23/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 31.03.1967
 Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 15 D 1026/2008 -261/09
 Účastník právneho vzťahu: Vlastník
@@ -1322,9 +1251,6 @@ Dátum narodenia : 17.08.1936
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 315 MÁČEK RUDOLF KNM JESENSKÉHO 1180/39 60  / 19200
-Informatívny výpis 24/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 27.01.1965
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
@@ -1377,9 +1303,6 @@ Dátum narodenia : 27.03.1955
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 330 ŠPIREC PETER UL.RUMANOVA č.12/28 LIPTOVDKÝ MIKULÁŠ 50  / 19200
-Informatívny výpis 25/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 23.07.1964
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
@@ -1433,9 +1356,6 @@ Dátum narodenia : 26.02.1938
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 344 ŠURHAŇÁKOVÁ ANNA r. MINDEKOVÁ, č. 387, SR 60  / 19200
-Informatívny výpis 26/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 08.05.1937
 Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 21D 587/2007 -201/08
 Účastník právneho vzťahu: Vlastník
@@ -1488,9 +1408,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
 359 JÁTIOVÁ ANNA r. JÁTIOVÁ, NESLUŠA č.531, NESLUŠA, SR 20  / 19200
 Dátum narodenia : 31.01.1939
-Informatívny výpis 27/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 31.01.1939
 Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 21D 303/2009 -327/09
 Účastník právneho vzťahu: Vlastník
@@ -1544,9 +1461,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Dátum narodenia : 04.02.1945
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 Účastník právneho vzťahu: Vlastník
-Informatívny výpis 28/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 372 HOLLÁ MÁRIA čS.178 NESLUŠA 20  / 19200
 Dátum narodenia : 31.05.1942
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
@@ -1599,9 +1513,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 384 Todorová Mária r. Žabková, č. 124, SR 30  / 19200
 Dátum narodenia : 08.05.1957
 Titul nadobudnutia DAROVACIA ZMLUVA Č. V 1910/2010 Z 27.12.2010 -518/10
-Informatívny výpis 29/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Účastník právneho vzťahu: Vlastník
 385 ŽABKA JOZEF,NESLUŠA č.161 60  / 19200
 Dátum narodenia : 19.03.1940
@@ -1654,9 +1565,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 398 HRUBÝ IVAN,NESLUŠA č.67 60  / 19200
 Dátum narodenia : 31.08.1944
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
-Informatívny výpis 30/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Účastník právneho vzťahu: Vlastník
 399 BELÁK JOZEF,NESLUŠA č.775 20  / 19200
 Dátum narodenia : 22.02.1961
@@ -1709,9 +1617,6 @@ Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
 413 ONDRUŠKOVÁ DRAHOMÍRA ČS.764 100  / 19200
 Dátum narodenia : 28.05.1939
 Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
-Informatívny výpis 31/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Účastník právneho vzťahu: Vlastník
 414 CHOVANCOVÁ VIERA ČS.143 6  / 19570
 Dátum narodenia : 01.01.1942
@@ -1765,9 +1670,6 @@ Dátum narodenia : 08.05.1959
 Titul nadobudnutia OSVEDČENIE O DEDIČSTVE č.D 972/02-406/03
 Účastník právneho vzťahu: Vlastník
 426 HAĽAMOVÁ MARGITA R.ŠULGANOVÁ ČS.891 40  / 19200
-Informatívny výpis 32/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 11.08.1947
 Titul nadobudnutia UZNESENIE OS ČADCA Č. D 657/02 -16/04
 Účastník právneho vzťahu: Vlastník
@@ -1821,9 +1723,6 @@ Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 4D 923/03 -200/04
 Dátum narodenia : 22.12.1957
 Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 4D 1791/02 -213/04
 Účastník právneho vzťahu: Vlastník
-Informatívny výpis 33/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 439 PLESKO JAN KNM UL.MATICE SLOVENSKEJ C.1316 80  / 19200
 Dátum narodenia : 23.07.1960
 Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 4D 1791/02 -213/04
@@ -1877,9 +1776,6 @@ Dátum narodenia : 29.07.1958
 Titul nadobudnutia UZNESENIE OS ČADCA Č. 4D 1676/02 -188/05
 Účastník právneho vzťahu: Vlastník
 451 TABAČEK ŠTEFAN r. TABAČEK, MGR., BANIČOVA 3393/6, ŽILINA, SR 24  / 19200
-Informatívny výpis 34/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Dátum narodenia : 01.01.1961
 Titul nadobudnutia UZNESENIE OS ČADCA Č. 4D 1676/02 -188/05
 Účastník právneho vzťahu: Vlastník
@@ -1933,9 +1829,6 @@ Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č.9D 346/04 -228/05
 463 PLOŠTICA STANISLAV r. PLOŠTICA, ING., s.č. 299, RADOĽA, SR 40  / 57600
 Dátum narodenia : 07.07.1955
 Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 4D 31/2004 -242/05
-Informatívny výpis 35/36 Aktualizácia katastrálneho portálu: 20.08.2011
-Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
-miesto trvalého pobytu (sídlo) vlastníka
 Účastník právneho vzťahu: Vlastník
 464 PLOŠTICA PETER r. PLOŠTICA, s.č. 46, DLHÉ POLE, SR 40  / 57600
 Dátum narodenia : 30.01.1957
@@ -1969,7 +1862,7 @@ Titul nadobudnutia DAROVACIA ZMLUVA Č. V 933/2008 Z 12.8.2008 -265/08
 471 Cisková Anna r. Kormanová, 023 41, NESLUŠA, č. 907, SR 25  / 19200
 Dátum narodenia : 29.06.1949
 Titul nadobudnutia DAROVACIA ZMLUVA Č. V 1903/10 Z 24. 3. 2011 - 84/11</Input>
-  <Options>IgnoreCase Multiline IgnorePatternWhitespace</Options>
+  <Options>IgnorePatternWhitespace</Options>
   <FileName>E:\small\kataster\kataster.express</FileName>
   <ReplaceString />
   <InputFilename />

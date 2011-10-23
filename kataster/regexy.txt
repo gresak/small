@@ -1,22 +1,24 @@
-(?<=Úèastník\správneho\svzahu:.*)\n\d+\s
+(?<=ï¿½ï¿½astnï¿½k\sprï¿½vneho\svzï¿½ahu:.*)\n\d+\s
 
-Vlastník\n\d+\s
+Vlastnï¿½k\n\d+\s
 
 \n\d+\s\D
 
-vzahu.*\n\d+\s
+vzï¿½ahu.*\n\d+\s
 
-(?<=vzahu:.*)\n(?=\d+\s)
+(?<=vzï¿½ahu:.*)\n(?=\d+\s)
 
-\n(?=Úèastník\správneho\svzahu:.*\n\d+\s)
+\n(?=ï¿½ï¿½astnï¿½k\sprï¿½vneho\svzï¿½ahu:.*\n\d+\s)
 
 
 
-Informatívny\svýpis.*\n.*\nmiesto\strvalého.*\n
+Informatï¿½vny\svï¿½pis.*\n.*\nmiesto\strvalï¿½ho.*\n
 
 
 
 ---
-\n(?=Úèastník právneho vzahu:.*\n\d+\s)
+\n(?=ï¿½ï¿½astnï¿½k prï¿½vneho vzï¿½ahu:.*\n\d+\s)
+
+(?s)Dï¿½tum\svyhotovenia\s(\d\d\.\d\d\.\d\d\d\d).*?ï¿½as\svyhotovenia
 
 

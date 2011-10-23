@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="730afd5f-7b03-4557-864e-903e1e4806ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vyhotovenie.express" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kataster.express" afterPath="$PROJECT_DIR$/kataster.express" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vyhotovenie.express" afterPath="$PROJECT_DIR$/vyhotovenie.express" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/regexy.txt" afterPath="$PROJECT_DIR$/regexy.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" />
     </list>
     <ignored path="kataster.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,7 +77,7 @@
       <file leaf-file-name="OwnershipReport.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="21" selection-start="178" selection-end="178" vertical-scroll-proportion="0.2155797">
+            <state line="5" column="43" selection-start="144" selection-end="144" vertical-scroll-proportion="0.15769945">
               <folding />
             </state>
           </provider>
@@ -863,7 +866,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="21" selection-start="178" selection-end="178" vertical-scroll-proportion="0.2155797">
+        <state line="5" column="43" selection-start="144" selection-end="144" vertical-scroll-proportion="0.15769945">
           <folding />
         </state>
       </provider>
