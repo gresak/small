@@ -4,7 +4,7 @@ import org.scalaquery.ql.{Query, SimpleFunction}
 import org.scalaquery.ql.extended.{ExtendedTable => Table}
 import org.scalaquery.ql.extended.MySQLDriver.Implicit._
 import org.scalaquery.session.Database.threadLocalSession
-import java.sql.{Clob, Date}
+import java.sql.{Timestamp, Clob, Date}
 
 object KDB {
 
@@ -18,45 +18,19 @@ object KDB {
 
   def withSession[T](f: => T): T = db.withSession(f)
 
-  object nacitanie extends Table[(Long, Date, String)]("nacitanie") {
+  object report extends Table[(Long, String, Date, Timestamp, Clob)]("report") {
 
-    def id_nacitanie = column[Long]("id_nacitanie", O.PrimaryKey, O.AutoInc)
-
-    def dt_vznik = column[Date]("dt_vznik")
+    def id_report = column[Long]("id_report", O.PrimaryKey, O.AutoInc)
 
     def tx_subor = column[String]("tx_subor")
 
-    def * = id_nacitanie ~ dt_vznik ~ tx_subor
+    def dt_aktualizacia = column[Date]("dt_aktualizacia")
 
-  }
-
-  object riadok extends Table[(Long, Long, Int, String)]("riadok") {
-
-    def id_riadok = column[Long]("id_riadok", O.PrimaryKey, O.AutoInc)
-
-    def id_nacitanie = column[Long]("id_nacitanie")
-
-    def int_cislo_riadok = column[Int]("int_cislo_riadok")
-
-    def tx_riadok = column[String]("tx_riadok")
-
-    def nacitanieKey = foreignKey("id_nacitanie_fk", id_nacitanie, nacitanie)(_.id_nacitanie)
-
-    def * = id_riadok ~ id_nacitanie ~ int_cislo_riadok ~ tx_riadok
-
-  }
-
-  object rawReport extends Table[(Long, Date, String, Clob)]("raw_report") {
-
-    def id_raw_report = column[Long]("id_raw_report", O.PrimaryKey, O.AutoInc)
-
-    def dt_vznik = column[Date]("dt_vznik")
-
-    def tx_subor = column[String]("tx_subor")
+    def dt_vyhotovenie = column[Timestamp]("dt_vyhotovenie")
 
     def clob_report = column[Clob]("clob_report")
 
-    def * = id_raw_report ~ dt_vznik ~ tx_subor ~ clob_report
+    def * = id_report ~ tx_subor ~ dt_aktualizacia ~ dt_vyhotovenie ~ clob_report
 
   }
 

@@ -1,29 +1,33 @@
 package sk.gresak.kataster
 
-import sk.gresak.util.PdfText
 import java.text.SimpleDateFormat
-import io.{BufferedSource, Source}
+import java.sql.Timestamp
+import sk.gresak.util.PdfText
 
 class OwnershipReport(path: String) {
-  val source: BufferedSource = Source.fromFile("C:\\Users\\edo\\Documents\\Urbariat\\xxx.txt")
-  val text: String = source.mkString
-  //val text: String = "\naaaaa\nČASŤ A:x\nggg"
-  //val text: String = new PdfText(path) txt
+  val text: String = new PdfText(path).txt
   val actualizationRE = """Aktualizácia\skatastrálneho\sportálu:\s(\d\d\.\d\d\.\d\d\d\d)""".r
+  val creationRE = """(?s)Dátum\svyhotovenia\s(\d\d\.\d\d\.\d\d\d\d).*?Čas\svyhotovenia:\s(\d\d\:\d\d\:\d\d)""".r
 
   def storeReport() {
-    val dateStr = actualizationRE findFirstMatchIn text match {
+    val actualizedStr = actualizationRE findFirstMatchIn text match {
       case Some(x) => x.subgroups(0)
       case _ => throw new Exception("Nenasiel sa datum aktualizacie portalu vo formate: " + actualizationRE)
     }
-    val dateOfActualization = new SimpleDateFormat("dd.MM.yyyy") parse dateStr
-    val sqlDate = new java.sql.Date(dateOfActualization.getTime)
-    val id = new LoadDAO insertRawReport(path, sqlDate, text)
+    val actualized = new SimpleDateFormat("dd.MM.yyyy") parse actualizedStr
+    val sqlActualized = new java.sql.Date(actualized.getTime)
+    val createdStr = creationRE findFirstMatchIn text match {
+      case Some(x) => x.subgroups(0) + " " + x.subgroups(1)
+      case _ => throw new Exception("Nenasiel sa cas vyhotovenia vo formate: " + creationRE)
+    }
+    val created = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss") parse createdStr
+    val sqlCreated = new Timestamp(created.getTime)
+    val id = new LoadDAO insertRawReport(path, sqlActualized, sqlCreated, text)
     println("\nInserted id = " + id.get)
   }
 
   def process() {
-    //storeReport
+    storeReport()
     val parts: Array[String] = text.split("""\nČASŤ\s[A-K]:.*""")
     println(parts.size)
   }
