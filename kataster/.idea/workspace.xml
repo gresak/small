@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="730afd5f-7b03-4557-864e-903e1e4806ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aktualizacia.express" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kataster.express" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rozdelenie.express" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ucastnik.express" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadDAO.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadDAO.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunKataster.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunKataster.scala" />
     </list>
     <ignored path="kataster.iws" />
     <ignored path=".idea/workspace.xml" />
