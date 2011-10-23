@@ -4,6 +4,7 @@ import org.scalaquery.ql.extended.MySQLDriver.Implicit._
 import org.scalaquery.session.Database.threadLocalSession
 import KDB._
 import javax.sql.rowset.serial.SerialClob
+import java.sql.Date
 
 class LoadDAO {
 
@@ -20,8 +21,8 @@ class LoadDAO {
       (id_nacitanie ~ int_cislo_riadok ~ tx_riadok).insertAll(g: _*)
     }
   }
-  def insertRawReport(fName: String, report:String): Option[Long] = withSession {
-    if (1 == (rawReport.tx_subor~rawReport.clob_report).insert(fName, new SerialClob(report.toCharArray))) insertedId else None
+  def insertRawReport(fName: String, created: Date, report:String): Option[Long] = withSession {
+    if (1 == (rawReport.tx_subor~rawReport.dt_vznik~rawReport.clob_report).insert(fName, created, new SerialClob(report.toCharArray))) insertedId else None
   }
 
 

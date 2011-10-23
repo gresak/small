@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<RegexProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Regex>ČASŤ\s[A-K]:.*\n</Regex>
+  <Input>GKÚ Bratislava
+VÝPIS Z KATASTRA NEHNUTEĽNOSTÍ
+Okres: Kysucké Nové Mesto Vytvorené cez katastrálny portál
+Obec: NESLUŠA Dátum vyhotovenia 26.08.2011
+Katastrálne územie: Nesluša Čas vyhotovenia: 21:53:49
+VÝPIS Z LISTU VLASTNÍCTVA  č. 7482
+ČASŤ A: MAJETKOVÁ PODSTATA
+PARCELY registra "E" evidované na mape určeného operátu
+Parcelné číslo Výmera v m2 Druh pozemku Pôvodné k.ú. Počet č. UO Umiest
+pozemku
+ 7272/  8 166606 Lesné pozemky 0 2
+ 7272/  9 37184 Lesné pozemky 0 2
+ 9021 88281 Ostatné plochy 0 2
+10264 372816 Lesné pozemky 0 2
+Legenda:
+Umiestnenie pozemku:
+2 - Pozemok je umiestnený mimo zastavaného územia obce
+ČASŤ B: VLASTNÍCI A INÉ OPRÁVNENÉ OSOBY
+Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
+miesto trvalého pobytu (sídlo) vlastníka
+Účastník právneho vzťahu: Vlastník
+1 VESELÁ ŠTEFÁNIA ,KYSUCKÉ NOVÉ MESTO ,NÁBREŽNÁ 908/17 20  / 19200
+Dátum narodenia : 10.10.1934
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+2 KÁCERÍKOVÁ LÝDIA ,KYSUCKÉ NOVÉ MESTO, UL.JESENSKÉHO 10  / 19200
+1180/6
+Dátum narodenia : 01.09.1953
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+3 GAZDÍKOVÁ MAGDALÉNA,NESLUŠA č.121 60  / 19200
+Dátum narodenia : 10.08.1952
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+4 BACKOVÁ MARTA R.RAKOVANOVÁ ČS.479 100  / 19200
+Dátum narodenia : 03.09.1936
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+5 VLČEK PAVOL, NESLUŠA,č.400 60  / 19200
+Dátum narodenia : 25.10.1945
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+6 UHRÍKOVÁ MÁRIA,DÚBIE č.29,KYSUCKÉ NOVÉ MESTO 40  / 19200
+Dátum narodenia : 23.03.1942
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+7 ŠKUTA JÁN ČS.268 30  / 19200
+Dátum narodenia : 03.05.1959
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+Informatívny výpis 1/36 Aktualizácia katastrálneho portálu: 20.08.2011
+Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
+miesto trvalého pobytu (sídlo) vlastníka
+8 BAJÁNEK JOZEF NESLUŠA č.846 30  / 19200
+Dátum narodenia : 19.04.1939
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+9 BAJNAROVÁ JOZEFÍNA r. BAJÁNKOVÁ, JIRÁSKOVA 655, STUDÉNKA, 30  / 19200
+ČR
+Dátum narodenia : 12.10.1943
+Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 21D 1379/2005 -186/06
+Účastník právneho vzťahu: Vlastník
+11 TRULÍKOVÁ ANEŽKA,NÁCHOD UL.DRUŽSTEVNÁ č.316 60  / 19200
+Dátum narodenia : 01.11.1934
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+12 BELÁK JOZEF r. BELÁK, DOL.INSKÝ POTOK 1225, KYSUCKÉ NOVÉ 40  / 19200
+MESTO, SR
+Dátum narodenia : 19.08.1956
+Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č.30D 197/2006 -15/07
+Účastník právneho vzťahu: Vlastník
+13 ŽABKOVÁ VALÉRIA,NESLUŠA č.80 20  / 19200
+Dátum narodenia : 03.08.1929
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+14 PLEVKOVÁ ANNA R.BIELA ČS.471 NESLUŠA 40  / 19200
+Dátum narodenia : 21.01.1923
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+16 BUČEK JÁN,NESLUŠA č.617 40  / 19200
+Dátum narodenia : 01.03.1947
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+18 TARANOVÁ MÁRIA,PIEŠŤANY,UL.STANIČNÁ č.33/14 60  / 19200
+Dátum narodenia : 08.05.1938
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+19 SKOKANOVÁ ŠTEFÁNIA R.BLAŽKOVANOVÁ ČS.457 20  / 19200
+Dátum narodenia : 17.09.1931
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+20 BLAŠKOVAN ŠTEFAN,RADOĹA č.51 10  / 19200
+Dátum narodenia : 17.04.1921
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+21 BOSÁ MARGITA ČS.258 70  / 19200
+Dátum narodenia : 25.05.1944
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+22 Cisková Anna r. Kormanová, NESLUŠA, č. 907, SR 50  / 19200
+Dátum narodenia : 29.06.1949
+Titul nadobudnutia DAROVACIA ZMLUVA Č. V 2051/09 Z 26.1.2010 - 26/10
+Účastník právneho vzťahu: Vlastník
+23 MINDEK JÁN,NESLUŠA č.89 80  / 19200
+Dátum narodenia : 08.09.1935
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Informatívny výpis 2/36 Aktualizácia katastrálneho portálu: 20.08.2011
+Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
+miesto trvalého pobytu (sídlo) vlastníka
+Účastník právneho vzťahu: Vlastník
+24 MÄKKÝ JÚLIUS r. MÄKKÝ, 02341, NESLUŠA, č. č.219, SR 20  / 19200
+Dátum narodenia : 16.08.1946
+Titul nadobudnutia OSVEDČENIE O DEDIČSTVE Č. 15D 719/2/2008 -157/09
+Účastník právneho vzťahu: Vlastník
+25 KOPICOVÁ MÁRIA,NESLUŠA č.384 170  / 19200
+Dátum narodenia : 12.05.1919
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+26 MAKKÝ STANISLAV r. MAKKÝ, NESLUŠA, č. 1026, SR 80  / 19200
+Dátum narodenia : 31.12.1959
+Titul nadobudnutia UZNESENIE OS ČADCA Č. 9D 941/2004 -25/07
+Účastník právneho vzťahu: Vlastník
+27 PARŠOVÁ IRENA r.HÚŠŤAVOVÁ KYS.LIESKOVEC čs.513 60  / 19200
+Dátum narodenia : 17.06.1940
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+28 VOJTEK JÁN,NESLUŠA č.230 10  / 19200
+Dátum narodenia : 20.11.1952
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+29 ŠUTÁKOVÁ ANASTÁZIA r. BURDIAKOVÁ, NESLUŠA, č. 943, SR 40  / 19200
+Dátum narodenia : 03.01.1945
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+31 CAPKO MILAN UL.SLÁDKOVIČOVA ČS.1232/43 KNM 30  / 19200
+Dátum narodenia : 20.04.1955
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+32 CAPKO KAROL UL.VAJANSKÉHO ČS.1129/1 KNM 30  / 19200
+Dátum narodenia : 17.03.1952
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+33 DRUGOVÁ ANNA,NESLUŠA č.25 30  / 19200
+Dátum narodenia : 03.01.1945
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+34 CIBULA RADOSLAV ČS.972 50  / 19200
+Dátum narodenia : 02.03.1974
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+35 ČULÁKOVÁ LÝDIA R.DRNDOVÁ KNM UL.NESLUŠSKÁ CESTA č.656 90  / 19200
+Dátum narodenia : 17.03.1955
+Titul nadobudnutia OSVEDČENIE O DEDIČSTVE č.D 27/03-33/04
+Účastník právneho vzťahu: Vlastník
+36 HOLLÁ DARINA , Cesta do Rudinyč.1007/5, KYSUCKÉ NOVÉ MESTO 30  / 19200
+Dátum narodenia : 06.01.1966
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Účastník právneho vzťahu: Vlastník
+37 MIČIANOVÁ ANNA R.ČERVEŇOVÁ RADOĽA ČS.203 60  / 19200
+Dátum narodenia : 15.04.1932
+Titul nadobudnutia OSVEČENIE VYHLÁSENIA O VYDRŽANÍ Č.NZ 266/01 -40/02
+Informatívny výpis 3/36 Aktualizácia katastrálneho portálu: 20.08.2011
+Por. číslo Priezvisko, meno (názov), rodné priezvisko, dátum narodenia, rodné číslo (IČO) a Spoluvlastnícky podiel
+miesto trvalého pobytu (sídlo) vlastníka
+Účastník právneho vzťahu: Vlastník</Input>
+  <Options>IgnoreCase Multiline IgnorePatternWhitespace</Options>
+  <FileName>E:\small\kataster\rozdelenie.express</FileName>
+  <ReplaceString />
+  <InputFilename />
+  <UpdateEventsEnabled>true</UpdateEventsEnabled>
+</RegexProject>
