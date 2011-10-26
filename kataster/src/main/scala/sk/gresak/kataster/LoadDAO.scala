@@ -8,12 +8,14 @@ import java.sql.{Timestamp, Date}
 
 class LoadDAO {
 
-  def insertRawReport(fName: String, actualized: Date, created: Timestamp, reportStr: String): Option[Long] = withSession {
+  def insertRawReport(fName: String, actualized: Date, created: Timestamp, reportStr: String): Long = withSession {
     import report._
     if (1 == (tx_subor ~ dt_aktualizacia ~ dt_vyhotovenie ~ clob_report).insert(
       fName, actualized, created, new SerialClob(reportStr.toCharArray))
-    ) insertedId
-    else None
+    ) insertedId.get
+    else throw new Exception("Ulozenie reportu do db sa nepodarilo, report = " +
+      fName + " actualized = " + actualized + " created = " + created
+    )
   }
 
 

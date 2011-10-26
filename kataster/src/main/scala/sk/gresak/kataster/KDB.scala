@@ -34,6 +34,34 @@ object KDB {
 
   }
 
+
+  object vlastnik extends Table[(Long, Long, String, Int, String, String, Date, String, String)]("vlastnik") {
+
+    def id_vlastnik = column[Long]("id_vlastnik", O.PrimaryKey, O.AutoInc)
+
+    def id_report = column[Long]("id_report")
+
+    def tx_pravny_vztah = column[String]("tx_pravny_vztah")
+
+    def int_por_cislo = column[Int]("int_por_cislo")
+
+    def tx_meno_adresa = column[String]("tx_meno_adresa")
+
+    def tx_podiel = column[String]("tx_podiel")
+
+    def dt_narodenie = column[Date]("dt_narodenie")
+
+    def tx_ico = column[String]("tx_ico")
+
+    def tx_nadobudnutie = column[String]("tx_nadobudnutie")
+
+    def reportKey = foreignKey("id_report_fk", id_report, report)(_.id_report)
+
+    def * = id_vlastnik ~ id_report ~ tx_pravny_vztah ~ int_por_cislo ~ tx_meno_adresa ~ tx_podiel ~ dt_narodenie ~ tx_ico ~ tx_nadobudnutie
+
+  }
+
+
   def insertedId: Some[Long] = {
     val insertedIdFunction = SimpleFunction.nullary[Long]("last_insert_id")
     new Some(Query(insertedIdFunction).first)

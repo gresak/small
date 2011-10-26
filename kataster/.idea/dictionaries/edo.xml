@@ -1,14 +1,23 @@
 <component name="ProjectDictionaryState">
   <dictionary name="edo">
     <words>
+      <w>adresa</w>
       <w>aktualizacia</w>
       <w>cislo</w>
       <w>kataster</w>
+      <w>meno</w>
       <w>nacitanie</w>
+      <w>nadobudnutie</w>
+      <w>narodenie</w>
+      <w>podiel</w>
+      <w>pravny</w>
       <w>riadok</w>
       <w>subor</w>
+      <w>tuples</w>
+      <w>vlastnik</w>
       <w>vyhotovenie</w>
       <w>vznik</w>
+      <w>vztah</w>
     </words>
   </dictionary>
 </component>
