@@ -35,7 +35,7 @@ object KDB {
   }
 
 
-  object vlastnik extends Table[(Long, Long, String, Int, String, String, Date, String, String)]("vlastnik") {
+  object vlastnik extends Table[(Long, Long, String, Int, String, String, Date, String, String, String)]("vlastnik") {
 
     def id_vlastnik = column[Long]("id_vlastnik", O.PrimaryKey, O.AutoInc)
 
@@ -53,11 +53,13 @@ object KDB {
 
     def tx_ico = column[String]("tx_ico")
 
+    def tx_plomba = column[String]("tx_plomba")
+
     def tx_nadobudnutie = column[String]("tx_nadobudnutie")
 
     def reportKey = foreignKey("id_report_fk", id_report, report)(_.id_report)
 
-    def * = id_vlastnik ~ id_report ~ tx_pravny_vztah ~ int_por_cislo ~ tx_meno_adresa ~ tx_podiel ~ dt_narodenie ~ tx_ico ~ tx_nadobudnutie
+    def * = id_vlastnik ~ id_report ~ tx_pravny_vztah ~ int_por_cislo ~ tx_meno_adresa ~ tx_podiel ~ dt_narodenie ~ tx_ico ~ tx_plomba ~ tx_nadobudnutie
 
   }
 

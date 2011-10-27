@@ -16,9 +16,11 @@ class OwnershipReport(path: String) {
   val creationRE = """(?s)Dátum\svyhotovenia\s(\d\d\.\d\d\.\d\d\d\d).*?Čas\svyhotovenia:\s(\d\d\:\d\d\:\d\d)""".r
   val headerRE = """(?s)Por.\sčíslo\sPriezvisko.*?vlastníka.*?\n""".r
   val footerRE = """(?s)Informatívny\svýpis.*?\n""".r
-  val partSplitRE = """(?s)\nČASŤ\s[A-K]:.*?\n""".r
+  val partSplitRE = """(?s)ČASŤ\s[A-K]:.*?\n""".r
   val ownerSplitRE = """(?s)\n(?=Účastník\správneho\svzťahu:.*\n\d+\s)""".r
-  val ownerBoxRE = """(?s)Účastník\správneho\svzťahu:\s(.*?)\n(\d+)\s(.*?)\s*(\d+\s*/\s*\d+).*?\n(.*?)\n?(Dátum\snarodenia|IČO)\s:\s(\d\d\.\d\d\.\d\d\d\d|.*?).*?(\n|)(.*)""".r
+  val ownerBoxRE = """(?s)Účastník\správneho\svzťahu:\s(.*?)\n(\d+)+\s(.*?)\s*(\d+\s*/\s*\d+)\n(.*?\n|)(Dátum\snarodenia|IČO)\s:\s(\d\d\.\d\d\.\d\d\d\d|.*?)\n(.*)""".r
+  val plombaRE = """PLOMBA\s.*""".r
+  //(PLOMBA.*?\n|).*""".r
 
   def storeReport(): Long = {
     val actualizedStr = actualizationRE findFirstMatchIn text match {
@@ -38,16 +40,25 @@ class OwnershipReport(path: String) {
     id
   }
 
+  def parseRest(rest: String)={
+    plombaRE findFirstMatchIn rest match {
+      case Some(x) => x.matched
+      case _ => null
+    }
+  }
+
   def parseOwner(idReport: Long, box: String): Owner =
     box match {
-      case ownerBoxRE(participant, num, nameAddress, share, street, labelStr, str, y, entitlement) =>
+      case ownerBoxRE(participant, num, nameAddress, share, street, labelStr, str, rest) =>
+        //if(notes!="")println("NOTES = " + notes)
         val (birthDate, ico) =
           if (labelStr == "IČO") (null, str)
           else {
             val d: java.util.Date = new SimpleDateFormat("dd.MM.yyyy") parse str
             (new Date(d.getTime), "")
           }
-        Owner(idReport, participant, Integer.parseInt(num), nameAddress + " " + street, share, birthDate, ico, entitlement)
+        val plomba: String = parseRest(rest)
+        Owner(idReport, participant, Integer.parseInt(num), nameAddress + " " + street, share, birthDate, ico, plomba, "")
       case _ => throw new Exception("\nOwner box not parsed:\n" + box)
     }
 

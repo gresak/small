@@ -68,12 +68,12 @@
           <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-tools.sbt/classfile_2.9.1/srcs/classfile_2.9.1-0.11.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-tools.sbt/io_2.9.1/srcs/io_2.9.1-0.11.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-tools.sbt/control_2.9.1/srcs/control_2.9.1-0.11.0-sources.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.8.1-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.9.0-1-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-tools.sbt/logging_2.9.1/srcs/logging_2.9.1-0.11.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-tools.sbt/process_2.9.1/srcs/process_2.9.1-0.11.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-tools.sbt/classpath_2.9.1/srcs/classpath_2.9.1-0.11.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-tools.sbt/launcher-interface_2.9.1/srcs/launcher-interface_2.9.1-0.11.0-sources.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-compiler/srcs/scala-compiler-2.8.1-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-compiler/srcs/scala-compiler-2.9.0-1-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-tools.sbt/incremental-compiler_2.9.1/srcs/incremental-compiler_2.9.1-0.11.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-tools.sbt/persist_2.9.1/srcs/persist_2.9.1-0.11.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-tools.sbt/compile_2.9.1/srcs/compile_2.9.1-0.11.0-sources.jar!/" />
