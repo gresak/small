@@ -8,9 +8,9 @@ import io.{Source, BufferedSource}
 
 class OwnershipReport(path: String) {
 
-  val textReal: String = new PdfText(path).txt
-  val source: BufferedSource = Source.fromFile("C:\\Users\\edo\\Documents\\Urbariat\\xxx.txt")
-  val text: String = source.mkString
+  lazy val textReal: String = new PdfText(path).txt
+  lazy val source: BufferedSource = Source.fromFile("C:\\Users\\edo\\Documents\\Urbariat\\xxx.txt")
+  lazy val text: String = source.mkString
 
   val actualizationRE = """Aktualizácia\skatastrálneho\sportálu:\s(\d\d\.\d\d\.\d\d\d\d)""".r
   val creationRE = """(?s)Dátum\svyhotovenia\s(\d\d\.\d\d\.\d\d\d\d).*?Čas\svyhotovenia:\s(\d\d\:\d\d\:\d\d)""".r
@@ -18,9 +18,26 @@ class OwnershipReport(path: String) {
   val footerRE = """(?s)Informatívny\svýpis.*?\n""".r
   val partSplitRE = """(?s)ČASŤ\s[A-K]:.*?\n""".r
   val ownerSplitRE = """(?s)\n(?=Účastník\správneho\svzťahu:.*\n\d+\s)""".r
-  val ownerBoxRE = """(?s)Účastník\správneho\svzťahu:\s(.*?)\n(\d+)+\s(.*?)\s*(\d+\s*/\s*\d+)\n(.*?\n|)(Dátum\snarodenia|IČO)\s:\s(\d\d\.\d\d\.\d\d\d\d|.*?)\n(.*)""".r
-  val plombaRE = """PLOMBA\s.*""".r
+  val participantRE = """(?s)Účastník\správneho\svzťahu:\s(.*?)\n(\d+)+\s(.*?)\s*(\d+\s*/\s*\d+)\n(.*)"""
+  val birthIcoRe ="""(?s)(.*?)(Dátum\snarodenia|IČO)\s:\s(\d\d\.\d\d\.\d\d\d\d|.*?)\n(.*)""".r
+  val plombRE = """(?s)(PLOMBA\s.*?\n)(.*)""".r
+  val notesRE = """.*PLOMBA\s.*""".r
   //(PLOMBA.*?\n|).*""".r
+
+  def parseOwner(idReport: Long, box: String): Owner =
+    box match {
+      case participantRE(participant, num, nameAddress, share, street, labelStr, str, rest) =>
+        //if(notes!="")println("NOTES = " + notes)
+        val (birthDate, ico) =
+          if (labelStr == "IČO") (null, str)
+          else {
+            val d: java.util.Date = new SimpleDateFormat("dd.MM.yyyy") parse str
+            (new Date(d.getTime), "")
+          }
+        val plomba: String = parseRest(rest)
+        Owner(idReport, participant, Integer.parseInt(num), nameAddress + " " + street, share, birthDate, ico, plomba, "")
+      case _ => throw new Exception("\nOwner box not parsed:\n" + box)
+    }
 
   def storeReport(): Long = {
     val actualizedStr = actualizationRE findFirstMatchIn text match {
@@ -41,26 +58,11 @@ class OwnershipReport(path: String) {
   }
 
   def parseRest(rest: String)={
-    plombaRE findFirstMatchIn rest match {
+    plombRE findFirstMatchIn rest match {
       case Some(x) => x.matched
       case _ => null
     }
   }
-
-  def parseOwner(idReport: Long, box: String): Owner =
-    box match {
-      case ownerBoxRE(participant, num, nameAddress, share, street, labelStr, str, rest) =>
-        //if(notes!="")println("NOTES = " + notes)
-        val (birthDate, ico) =
-          if (labelStr == "IČO") (null, str)
-          else {
-            val d: java.util.Date = new SimpleDateFormat("dd.MM.yyyy") parse str
-            (new Date(d.getTime), "")
-          }
-        val plomba: String = parseRest(rest)
-        Owner(idReport, participant, Integer.parseInt(num), nameAddress + " " + street, share, birthDate, ico, plomba, "")
-      case _ => throw new Exception("\nOwner box not parsed:\n" + box)
-    }
 
   def processOwners(idReport: Long, s: String): Array[Owner] = ownerSplitRE.split(s).map(parseOwner(idReport, _))
 

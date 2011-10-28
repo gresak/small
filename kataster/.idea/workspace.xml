@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="730afd5f-7b03-4557-864e-903e1e4806ac" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/edo.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/edo.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea_modules/default-33dc2a.iml" afterPath="$PROJECT_DIR$/.idea_modules/default-33dc2a.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea_modules/project.iml" afterPath="$PROJECT_DIR$/.idea_modules/project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/domain/Owner.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/domain/Owner.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/KDB.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/KDB.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerDAO.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerDAO.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" />
     </list>
     <ignored path="kataster.iws" />
@@ -43,7 +37,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" line="73" class="sk.gresak.kataster.OwnershipReport" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" line="75" class="sk.gresak.kataster.OwnershipReport" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -97,55 +91,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="KDB.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/KDB.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="84" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="OwnershipReport.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="35" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.18923934">
+            <state line="23" column="21" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.30110934">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Regex.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.8.1-sources.jar!/scala/util/matching/Regex.scala">
+      <file leaf-file-name="ParseOwnerSuite.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseOwnerSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="6" selection-start="2594" selection-end="2594" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadDAO.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadDAO.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="59" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OwnerDAO.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerDAO.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="18" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Owner.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/domain/Owner.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="63" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
+            <state line="11" column="88" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -174,6 +132,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/domain/Owner.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/KDB.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerDAO.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseOwnerSuite.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" />
       </list>
     </option>
@@ -196,7 +155,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="Scope" currentSubView="All" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -208,6 +167,176 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="default-33dc2a">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="kataster">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="default-33dc2a">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="kataster">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/test/scala">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="sk/gresak/kataster">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="default-33dc2a">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="kataster">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="default-33dc2a">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="kataster">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="test/scala">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="sk/gresak/kataster">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="default-33dc2a">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="kataster">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="default-33dc2a">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="kataster">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="default-33dc2a">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="kataster">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="test/scala">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="sk/gresak/kataster">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="default-33dc2a">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="kataster">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,139 +355,78 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Favorites" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="default-0ce007">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="kataster">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="default-0ce007">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="kataster">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main/scala">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="sk/gresak">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="default-0ce007">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="kataster">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main/scala">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="sk/gresak">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="kataster">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="All">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="default-0ce007">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="kataster">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gresak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="default-0ce007">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="kataster">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main/scala">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="sk/gresak">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="util">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gresak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="default-0ce007">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="kataster">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main/scala">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="sk/gresak">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="kataster">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -370,14 +438,6 @@
               <option name="myItemId" value="kataster" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -385,103 +445,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scalaquery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scalaquery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scalaquery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SetParameter.class" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default-0ce007" />
+              <option name="myItemId" value="default-33dc2a" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,7 +455,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="default-0ce007" />
+              <option name="myItemId" value="default-33dc2a" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -505,7 +469,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="default-0ce007" />
+              <option name="myItemId" value="default-33dc2a" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -519,22 +483,23 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="211" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="238" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="238" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="219" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="219" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="239" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1146" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1143" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1146" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="236" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="236" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -548,39 +513,48 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="editing.templates" />
     <property name="project.structure.side.proportion" value="0.1863426" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="sk.gresak.kataster" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="sk.gresak.kataster" />
       <recent name="sk.gresak.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RunKatasterMain">
+  <component name="Regex">
+    <option name="pos1" value="218" />
+    <option name="pos2" value="218" />
+    <option name="pos3" value="162" />
+    <option name="pos4" value="444" />
+    <option name="pos5" value="162" />
+    <option name="autoUpdate" value="true" />
+    <option name="referenceOn" value="false" />
+    <option name="referencePos" value="0" />
+    <option name="showLabels" value="true" />
+  </component>
+  <component name="RunManager" selected="ScalaTest.ParseOwnerSuite">
+    <configuration default="false" name="ParseOwnerSuite" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="default-33dc2a" />
+      <setting name="path" value="sk.gresak.kataster.ParseOwnerSuite" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
       <module name="" />
       <setting name="vmparams" value="" />
       <setting name="consoleArgs" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <method>
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="packagepath" value="" />
       <setting name="workingDirectory" value="$PROJECT_DIR$" />
       <method>
         <option name="BuildArtifacts" enabled="false" />
@@ -598,6 +572,20 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="packagepath" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <method>
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
       </method>
@@ -683,11 +671,11 @@
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
       </method>
     </configuration>
-    <configuration default="true" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
       <module name="" />
       <setting name="path" value="" />
+      <setting name="package" value="" />
       <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="$PROJECT_DIR$" />
       <method>
@@ -697,11 +685,11 @@
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
       </method>
     </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+    <configuration default="true" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
       <module name="" />
       <setting name="path" value="" />
-      <setting name="package" value="" />
       <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="$PROJECT_DIR$" />
       <method>
@@ -744,9 +732,10 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.RunKatasterMain" />
       <item index="1" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.ParseOwnerSuite" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -788,20 +777,22 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32969433" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36462882" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21267454" sideWeight="0.36790392" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23147154" sideWeight="0.72598255" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32969433" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32975295" sideWeight="0.63973796" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36462882" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.360262" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27401745" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973147" sideWeight="0.67030567" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -854,16 +845,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaquery/scalaquery_2.8.1/srcs/scalaquery_2.8.1-0.9.5-sources.jar!/org/scalaquery/session/PositionedParameters.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="6" selection-start="3641" selection-end="3641" vertical-scroll-proportion="0.5950992" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaquery/scalaquery_2.8.1/srcs/scalaquery_2.8.1-0.9.5-sources.jar!/org/scalaquery/util/Node.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="235" selection-end="235" vertical-scroll-proportion="0.19836639" />
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaquery/scalaquery_2.8.1/srcs/scalaquery_2.8.1-0.9.5-sources.jar!/org/scalaquery/util/WithOp.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="12" selection-start="35" selection-end="41" vertical-scroll-proportion="0.03967328" />
@@ -906,9 +887,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/KDB.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="84" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="50" column="84" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.8.1-sources.jar!/scala/util/matching/Regex.scala">
@@ -918,28 +897,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadDAO.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="59" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="59" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerDAO.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="18" column="18" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/domain/Owner.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="63" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
+        <state line="3" column="63" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunKataster.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="58" selection-start="344" selection-end="398" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseOwnerSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="88" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="35" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.18923934">
+        <state line="23" column="21" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.30110934">
           <folding />
         </state>
       </provider>
@@ -997,7 +984,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>project</last-edited>
+          <last-edited>default-33dc2a</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1027,6 +1014,17 @@
             <option name="proportions">
               <list>
                 <option value="0.1863426" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
