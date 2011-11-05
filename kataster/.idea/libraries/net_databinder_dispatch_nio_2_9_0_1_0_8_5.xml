@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="net.databinder_dispatch-nio_2.9.0-1_0.8.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/net.databinder/dispatch-nio_2.9.0-1/jars/dispatch-nio_2.9.0-1-0.8.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.ivy2/cache/net.databinder/dispatch-nio_2.9.0-1/docs/dispatch-nio_2.9.0-1-0.8.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/net.databinder/dispatch-nio_2.9.0-1/srcs/dispatch-nio_2.9.0-1-0.8.5-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/net.databinder/dispatch-nio_2.9.0-1/srcs/dispatch-nio_2.9.0-1-0.8.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

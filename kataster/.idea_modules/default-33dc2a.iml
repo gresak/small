@@ -27,6 +27,22 @@
     <orderEntry type="library" name="org.scalaquery_scalaquery_2.9.0-1_0.9.5" level="project" />
     <orderEntry type="library" name="org.apache.pdfbox_pdfbox-app_1.6.0" level="project" />
     <orderEntry type="library" name="mysql_mysql-connector-java_5.1.18" level="project" />
+    <orderEntry type="library" name="net.liftweb_lift-json_2.9.0-1_2.4-M3" level="project" />
+    <orderEntry type="library" name="com.thoughtworks.paranamer_paranamer_2.3" level="project" />
+    <orderEntry type="library" name="org.scala-lang_scalap_2.9.0-1" level="project" />
+    <orderEntry type="library" name="org.scala-lang_scala-compiler_2.9.0-1" level="project" />
+    <orderEntry type="library" name="net.databinder_dispatch-core_2.9.0-1_0.8.5" level="project" />
+    <orderEntry type="library" name="org.apache.httpcomponents_httpclient_4.1" level="project" />
+    <orderEntry type="library" name="org.apache.httpcomponents_httpcore_4.1" level="project" />
+    <orderEntry type="library" name="commons-logging_commons-logging_1.1.1" level="project" />
+    <orderEntry type="library" name="commons-codec_commons-codec_1.4" level="project" />
+    <orderEntry type="library" name="net.databinder_dispatch-oauth_2.9.0-1_0.8.5" level="project" />
+    <orderEntry type="library" name="net.databinder_dispatch-http_2.9.0-1_0.8.5" level="project" />
+    <orderEntry type="library" name="net.databinder_dispatch-futures_2.9.0-1_0.8.5" level="project" />
+    <orderEntry type="library" name="net.databinder_dispatch-lift-json_2.9.0-1_0.8.5" level="project" />
+    <orderEntry type="library" name="net.databinder_dispatch-nio_2.9.0-1_0.8.5" level="project" />
+    <orderEntry type="library" name="org.apache.httpcomponents_httpasyncclient_4.0-alpha1" level="project" />
+    <orderEntry type="library" name="org.apache.httpcomponents_httpcore-nio_4.1" level="project" />
     <orderEntry type="library" scope="TEST" name="org.scalatest_scalatest_2.9.0-1_1.6.1" level="project" />
   </component>
 </module>
