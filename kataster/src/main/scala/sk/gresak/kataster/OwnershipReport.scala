@@ -55,8 +55,7 @@ class OwnershipReport(path: String) {
     val parts: Array[String] = partSplitRE.split(y)
     //val owners: Array[Owner] = processOwners(1, parts(2))
     val owners: Array[Owner] = processOwners(idReport, parts(2))
-    val ownerDAO: OwnerDAO = new OwnerDAO
-    ownerDAO.insertOwners(owners)
+    OwnerDAO.insertOwners(owners)
   }
 
 }

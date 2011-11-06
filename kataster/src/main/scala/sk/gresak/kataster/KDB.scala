@@ -1,9 +1,6 @@
 package sk.gresak.kataster
 
-import org.scalaquery.ql.{Query, SimpleFunction}
 import org.scalaquery.ql.extended.{ExtendedTable => Table}
-import org.scalaquery.ql.extended.MySQLDriver.Implicit._
-import org.scalaquery.session.Database.threadLocalSession
 import java.sql.{Timestamp, Clob, Date}
 
 object KDB {
@@ -35,8 +32,8 @@ object KDB {
   }
 
 
-  object vlastnik extends
-  Table[(Long, Long, String, Int, String, String, String, String, String, String, Int, Int, Date, String, String, String, String)]("vlastnik") {
+  object vlastnik extends Table[(Long, Long, String, Int, String, String, String, String, Clob, String,
+    String, Int, Int, Date, String, String, String, String)]("vlastnik") {
 
     def id_vlastnik = column[Long]("id_vlastnik", O.PrimaryKey, O.AutoInc)
 
@@ -53,6 +50,8 @@ object KDB {
     def tx_rodeny = column[String]("tx_rodeny")
 
     def tx_adresa = column[String]("tx_adresa")
+
+    def clob_geocode_json = column[Clob]("clob_geocode_json")
 
     def tx_psc = column[String]("tx_psc")
 
@@ -75,15 +74,17 @@ object KDB {
     def reportKey = foreignKey("id_report_fk", id_report, report)(_.id_report)
 
     def * = id_vlastnik ~ id_report ~ tx_pravny_vztah ~ int_por_cislo ~
-      tx_meno ~ tx_priezvisko ~ tx_rodeny ~ tx_adresa ~ tx_psc ~ tx_stat ~
+      tx_meno ~ tx_priezvisko ~ tx_rodeny ~ tx_adresa ~ clob_geocode_json ~ tx_psc ~ tx_stat ~
       int_podiel1 ~ int_podiel2 ~ dt_narodenie ~ tx_ico ~ tx_plomba ~ tx_nadobudnutie ~ tx_poznamky
 
   }
 
+  /*
 
-  def insertedId: Some[Long] = {
-    val insertedIdFunction = SimpleFunction.nullary[Long]("last_insert_id")
-    new Some(Query(insertedIdFunction).first)
-  }
+    def insertedId: Some[Long] = {
+      val insertedIdFunction = SimpleFunction.nullary[Long]("last_insert_id")
+      new Some(Query(insertedIdFunction).first)
+    }
+  */
 
 }
