@@ -10,8 +10,7 @@ class OwnerUpdateSuite extends FunSuite {
     val dbProp = new Properties
     dbProp.load(new FileInputStream("db.properties"))
     KDB.setForUrl(dbProp.getProperty("dbUrl"), dbProp.getProperty("dbUser"), dbProp.getProperty("dbPassword"), dbProp.getProperty("dbDriver"))
-
-    OwnerDAO.updateOwnersGeocodes1()
+    OwnerDAO updateOwnersGeocodes List((1.toLong,"XXX"),(1.toLong,"XXX"))
     assert(true)
   }
 

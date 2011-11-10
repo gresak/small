@@ -1,10 +1,10 @@
 package sk.gresak.kataster
 
 object NameAddressParser {
-  val partsRe = """([^\s,]+)\s([^\s,]+)[\s,]+([rR]O?D?\.[\s,]*([^\s,]+)[\s,]+)?(.*+)""".r
+  val partsRe = """([^\s,]+)\s([^\s,]+)[\s,]+([rR]O?D?\.[\s,]*([^\s,]+)[\s,\.]+)?(.*+)""".r
   val removeCommasRe = """\s*,\s*""".r
   val removeSRRe = """\s+SR(\s*|$)""".r
-  val removeINGRe = """^ING[\s\.]+""".r
+  val removeINGRe = """^(ING|JUDR)[\s\.]+""".r
   val repairCSRe = """(?<=(\s{1}|^))[CČcč][Ss]?\.""".r
   val findCRRe = """(.*?)\s+ČR\s*""".r
   val zipRe = """(.*?)(\sPSČ\s)?(\d\d\d\s?\d\d)([\s,](.*)|$)""".r

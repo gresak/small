@@ -2,24 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="730afd5f-7b03-4557-864e-903e1e4806ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/other.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/domain/AddressG.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/BaseDAO.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/Geocodes.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadReport.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/ReadGeocodes.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/OwnerUpdateSuite.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseGeocodeResponseSuite.scala" />
-      <change type="DELETED" beforePath="E:\small\kataster\kataster.properties" afterPath="" />
-      <change type="DELETED" beforePath="E:\small\kataster\src\main\scala\sk\gresak\kataster\RunKataster.scala" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/edo.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/edo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/Geocodes.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/Geocodes.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/KDB.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/KDB.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadDAO.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadDAO.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/NameAddressParser.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/NameAddressParser.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerDAO.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerDAO.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerParser.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerParser.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/OwnerUpdateSuite.scala" afterPath="$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/OwnerUpdateSuite.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseOwnerSuite.scala" afterPath="$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseOwnerSuite.scala" />
+      <change type="MOVED" beforePath="E:\small\kataster\src\main\scala\sk\gresak\kataster\LoadReport.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunLoadReport.scala" />
+      <change type="MOVED" beforePath="E:\small\kataster\src\main\scala\sk\gresak\kataster\ReadGeocodes.scala" afterPath="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunGeocodes.scala" />
     </list>
     <ignored path="kataster.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,6 +32,34 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" line="27" class="sk.gresak.kataster.OwnershipReport" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" line="16" class="sk.gresak.kataster.OwnershipReport" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -78,55 +100,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoadReport.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadReport.scala">
+      <file leaf-file-name="OwnerParser.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerParser.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="42" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+            <state line="49" column="43" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OwnershipReport.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="63" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.5245614">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OwnerDAO.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerDAO.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="27" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParseNameAddressSuite.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseNameAddressSuite.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="16" selection-start="663" selection-end="666" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParseOwnerSuite.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseOwnerSuite.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="22" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NameAddressParser.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="NameAddressParser.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/NameAddressParser.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="6" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+            <state line="11" column="7" selection-start="441" selection-end="441" vertical-scroll-proportion="0.20504385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunLoadReport.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunLoadReport.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="9" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OwnershipReport.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="45" selection-start="2583" selection-end="2583" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,22 +150,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/util/Parse.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/domain/AddressG.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseGeocodeResponse.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseNameAddressSuite.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseGeocodeResponseSuite.scala" />
-        <option value="$PROJECT_DIR$/db.properties" />
         <option value="$PROJECT_DIR$/other.properties" />
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/ReadGeocodes.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/BaseDAO.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadReport.scala" />
+        <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadDAO.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/OwnerUpdateSuite.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/KDB.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/Geocodes.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunGeocodes.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerDAO.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadReport.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/Geocodes.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/NameAddressParser.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseOwnerSuite.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunLoadReport.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerParser.scala" />
       </list>
     </option>
   </component>
@@ -195,96 +199,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default-33dc2a" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default-33dc2a" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sk.gresak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default-33dc2a" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sk.gresak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kataster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane>
           <PATH>
@@ -411,6 +325,68 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default-33dc2a" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default-33dc2a" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sk.gresak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default-33dc2a" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sk.gresak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kataster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Favorites" />
     </panes>
   </component>
@@ -472,7 +448,7 @@
     <option name="referencePos" value="1271" />
     <option name="showLabels" value="true" />
   </component>
-  <component name="RunManager" selected="ScalaTest.ParseOwnerSuite">
+  <component name="RunManager" selected="Application.RunLoadReport">
     <configuration default="true" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -621,10 +597,10 @@
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
       </method>
     </configuration>
-    <configuration default="false" name="LoadReport" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="sk.gresak.kataster.LoadReport" />
+    <configuration default="false" name="RunLoadReport" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="sk.gresak.kataster.RunLoadReport" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="E:\small\kataster\db.properties E:\small\kataster\other.properties" />
+      <option name="PROGRAM_PARAMETERS" value="E:\small\kataster\db.properties E:\small\kataster\other.properties E:\small\kataster\replacements.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -635,6 +611,30 @@
       <envs />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="49716" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="SBT.BeforeRunTask" enabled="true" action="products" runInCurrentModule="true" />
+      </method>
+    </configuration>
+    <configuration default="false" name="RunGeocodes" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="sk.gresak.kataster.RunGeocodes" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="E:\small\kataster\db.properties" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="default-33dc2a" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49406" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -716,13 +716,14 @@
         <option name="SBT.BeforeRunTask" enabled="true" action="test:compile" runInCurrentModule="false" />
       </method>
     </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Application.LoadReport" />
-      <item index="1" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.ParseOwnerSuite" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.ParseNameAddressSuite" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.ParseGeocodeResponseSuite" />
-      <item index="5" class="java.lang.String" itemvalue="ScalaTest.OwnerUpdateSuite" />
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Application.RunLoadReport" />
+      <item index="1" class="java.lang.String" itemvalue="Application.RunGeocodes" />
+      <item index="2" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.ParseOwnerSuite" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.ParseNameAddressSuite" />
+      <item index="5" class="java.lang.String" itemvalue="ScalaTest.ParseGeocodeResponseSuite" />
+      <item index="6" class="java.lang.String" itemvalue="ScalaTest.OwnerUpdateSuite" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -759,26 +760,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1062" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1062" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33951965" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32804233" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36462882" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6451965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30895197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21267454" sideWeight="0.36790392" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19280344" sideWeight="0.65938866" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18697916" sideWeight="0.5703704" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34061137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42962962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47816592" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32969433" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973147" sideWeight="0.67030567" order="2" side_tool="false" content_ui="combo" />
@@ -832,29 +833,24 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/BaseDAO.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/net.databinder/dispatch-core_2.9.0-1/srcs/dispatch-core_2.9.0-1-0.8.5-sources.jar!/requests.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="54" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" />
+        <state line="8" column="14" selection-start="234" selection-end="241" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaquery/scalaquery_2.9.0-1/srcs/scalaquery_2.9.0-1-0.9.5-sources.jar!/org/scalaquery/session/DatabaseCapabilities.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunGeocodes.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="238" selection-end="238" vertical-scroll-proportion="0.13492064" />
+        <state line="10" column="23" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaquery/scalaquery_2.9.0-1/srcs/scalaquery_2.9.0-1-0.9.5-sources.jar!/org/scalaquery/ql/basic/BasicInsertInvoker.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/net.databinder/dispatch-core_2.9.0-1/srcs/dispatch-core_2.9.0-1-0.8.5-sources.jar!/handlers.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="86" selection-start="630" selection-end="630" vertical-scroll-proportion="0.2505669" />
+        <state line="84" column="6" selection-start="3756" selection-end="3756" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaquery/scalaquery_2.9.0-1/srcs/scalaquery_2.9.0-1-0.9.5-sources.jar!/org/scalaquery/ql/Query.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/Geocodes.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="6" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaquery/scalaquery_2.9.0-1/srcs/scalaquery_2.9.0-1-0.9.5-sources.jar!/org/scalaquery/ql/ColumnBase.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="6" selection-start="3164" selection-end="3164" vertical-scroll-proportion="0.0" />
+        <state line="8" column="72" selection-start="189" selection-end="231" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseGeocodeResponseSuite.scala">
@@ -862,64 +858,67 @@
         <state line="27" column="18" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/KDB.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.9.0-1-sources.jar!/scala/util/matching/Regex.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="47" selection-start="1147" selection-end="1158" vertical-scroll-proportion="0.019274376" />
+        <state line="32" column="11" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.9.0-1-sources.jar!/scala/collection/parallel/ParSeqLike.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="8" selection-start="2790" selection-end="2790" vertical-scroll-proportion="0.3325554" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.9.0-1-sources.jar!/scala/collection/Iterator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="251" column="0" selection-start="9638" selection-end="9638" vertical-scroll-proportion="0.43640608" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.9.0-1-sources.jar!/scala/collection/TraversableOnce.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="6" selection-start="4315" selection-end="4315" vertical-scroll-proportion="0.33211678" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/OwnerUpdateSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="442" selection-end="442" vertical-scroll-proportion="0.2505669" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadDAO.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="71" selection-start="517" selection-end="554" vertical-scroll-proportion="0.2505669" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/Geocodes.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="52" selection-start="322" selection-end="322" vertical-scroll-proportion="0.21201815" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerDAO.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="27" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/NameAddressParser.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseNameAddressSuite.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="663" selection-end="666" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="20" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/sk/gresak/kataster/ParseOwnerSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="22" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0">
+        <state line="68" column="34" selection-start="3012" selection-end="3012" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerDAO.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="7" selection-start="695" selection-end="695" vertical-scroll-proportion="0.7354409">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/LoadReport.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/RunLoadReport.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="42" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+        <state line="13" column="9" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnershipReport.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="63" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.5245614">
+        <state line="59" column="45" selection-start="2583" selection-end="2583" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/OwnerParser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="43" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sk/gresak/kataster/NameAddressParser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="7" selection-start="441" selection-end="441" vertical-scroll-proportion="0.20504385">
           <folding />
         </state>
       </provider>

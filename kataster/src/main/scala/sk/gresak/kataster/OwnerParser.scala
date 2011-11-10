@@ -2,8 +2,9 @@ package sk.gresak.kataster
 
 import sk.gresak.domain.Owner
 import sk.gresak.util.Parse
+import util.matching.Regex
 
-object OwnerParser {
+class OwnerParser(val replacements: List[(Regex, String)]) {
 
   val participantRe = """(?s)Účastník\správneho\svzťahu:\s(.*?)\r\n(\d+)\s(.*?)\s*(\d+)\s*/\s*(\d+)\r\n(.*)""".r
   val birthIcoRe = """(?s)(Dátum\snarodenia|IČO)\s:\s(\d\d\.\d\d\.\d\d\d\d|.*?)(\r\n|$).*""".r
@@ -12,6 +13,10 @@ object OwnerParser {
   val plombRe = """(?s)(.*?)(PLOMBA\s.*?)\r\n(.*)""".r
   val notesRe = """(?s)(.*?)(Poznámka.*?)\r\n""".r
   val endReplaceRe = """(?s)\r\n""".r
+
+  def applyReplacements(s: String): String = replacements.foldLeft(s)( {
+    (z, k) => k._1.replaceAllIn(z,k._2)
+  }  )
 
   def parse(idReport: Long, box: String): Owner = {
     val (participant, num, nameAddress, share1, share2, box1) = box match {
@@ -41,7 +46,8 @@ object OwnerParser {
     }
     val street3 = endReplaceRe.replaceAllIn(street2, "")
     val street = if (street3 != "") " " + street3 else ""
-    val addressParts = NameAddressParser.parse(nameAddress + street)
+    val ns = applyReplacements(nameAddress + street)
+    val addressParts = NameAddressParser.parse(ns)
     Owner(idReport, participant, num,
       addressParts._1, addressParts._2, addressParts._3, addressParts._4, addressParts._5, addressParts._6,
       share1, share2, birthDate, ico, plomb, entitlement, notes)

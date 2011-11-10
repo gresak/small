@@ -2,10 +2,9 @@ package sk.gresak.kataster
 
 import org.scalaquery.ql.extended.{ExtendedTable => Table}
 import java.sql.{Timestamp, Clob, Date}
+import org.scalaquery.session.Database
 
 object KDB {
-
-  import org.scalaquery.session.Database
 
   private var db: Database = null
 
@@ -14,6 +13,8 @@ object KDB {
   }
 
   def withSession[T](f: => T): T = db.withSession(f)
+
+  def withTransaction[T](f: => T): T = db.withTransaction(f)
 
   object report extends Table[(Long, String, Date, Timestamp, Clob)]("report") {
 
@@ -30,7 +31,6 @@ object KDB {
     def * = id_report ~ tx_subor ~ dt_aktualizacia ~ dt_vyhotovenie ~ clob_report
 
   }
-
 
   object vlastnik extends Table[(Long, Long, String, Int, String, String, String, String, Clob, String,
     String, Int, Int, Date, String, String, String, String)]("vlastnik") {
@@ -78,13 +78,5 @@ object KDB {
       int_podiel1 ~ int_podiel2 ~ dt_narodenie ~ tx_ico ~ tx_plomba ~ tx_nadobudnutie ~ tx_poznamky
 
   }
-
-  /*
-
-    def insertedId: Some[Long] = {
-      val insertedIdFunction = SimpleFunction.nullary[Long]("last_insert_id")
-      new Some(Query(insertedIdFunction).first)
-    }
-  */
 
 }

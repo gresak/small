@@ -11,30 +11,16 @@ import javax.sql.rowset.serial.SerialClob
 object OwnerDAO extends BaseDAO {
 
   def updateOwnersGeocodes(geocodes: List[(Long, String)]) = {
-    /*
-        val q = vlastnik.where(_.id_vlastnik === 5.bind).map(_.clob_geocode_json)
-        q.update(new SerialClob("hhh".toCharArray))
-    */
+    withTransaction {
+      geocodes map {
+        x => updateGeocodesByOwnerId(x._1, x._2)
+      }
+    }
   }
 
-  def updateOwnersGeocodes1() = withSession {
-    //vlastnik.id_vlastnik.===()
-/*
-    val q=for (owner<-vlastnik if owner.id_vlastnik===)
-
-    val q8 = for(u <- Users if u.last.isNull) yield u.first ~ u.last
-    println("q8: " + q8.updateStatement)
-
-*/
-
-  }
-
-  def updateOwnersGeocodes2() = withSession {
-    val z: Long = 5
-    val q7 = vlastnik.where(_.id_vlastnik === z.bind).map(_.clob_geocode_json)
-    val updated2 = q7.update(new SerialClob("hhh".toCharArray))
-    println("Updated " + updated2 + " row(s)")
-
+  def updateGeocodesByOwnerId(z: Long, gc: String) {
+    val query = vlastnik.where(_.id_vlastnik === z.bind).map(_.clob_geocode_json)
+    query.update(new SerialClob(gc.toCharArray))
   }
 
 
@@ -48,7 +34,7 @@ object OwnerDAO extends BaseDAO {
   def readOwners(id_report: Long): List[(Long, String)] =
     withSession {
       val qx = for {
-        owner <- vlastnik if owner.id_report == id_report
+        owner <- vlastnik if owner.id_report === id_report
       } yield owner.id_vlastnik ~ owner.tx_adresa
       qx.list
     }

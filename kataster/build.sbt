@@ -2,7 +2,7 @@ name := "kataster"
 
 version := "0.1.0"
 
-organization := "org.scalaquery"
+organization := "net.gresak"
 
 scalaVersion := "2.9.0-1"
 
