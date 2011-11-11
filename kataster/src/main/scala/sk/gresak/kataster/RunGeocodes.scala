@@ -8,7 +8,8 @@ object RunGeocodes {
     val dbProp = new Properties
     dbProp.load(new FileInputStream(args(0)))
     KDB.setForUrl(dbProp.getProperty("dbUrl"), dbProp.getProperty("dbUser"), dbProp.getProperty("dbPassword"), dbProp.getProperty("dbDriver"))
-    Geocodes.reloadByIdReport(1.toLong)
+    //Geocodes.reloadByIdReport(1.toLong)
+    Geocodes.updateFormattedAddress(1.toLong)
   }
 
 }

@@ -49,7 +49,7 @@ class OwnerParser(val replacements: List[(Regex, String)]) {
     val ns = applyReplacements(nameAddress + street)
     val addressParts = NameAddressParser.parse(ns)
     Owner(idReport, participant, num,
-      addressParts._1, addressParts._2, addressParts._3, addressParts._4, addressParts._5, addressParts._6,
+      addressParts._1, addressParts._2, addressParts._3, addressParts._4, addressParts._5, null,
       share1, share2, birthDate, ico, plomb, entitlement, notes)
   }
 

@@ -32,7 +32,7 @@ object KDB {
 
   }
 
-  object vlastnik extends Table[(Long, Long, String, Int, String, String, String, String, Clob, String,
+  object vlastnik extends Table[(Long, Long, String, Int, String, String, String, String, String, String, String, Int, Clob, String,
     String, Int, Int, Date, String, String, String, String)]("vlastnik") {
 
     def id_vlastnik = column[Long]("id_vlastnik", O.PrimaryKey, O.AutoInc)
@@ -50,6 +50,14 @@ object KDB {
     def tx_rodeny = column[String]("tx_rodeny")
 
     def tx_adresa = column[String]("tx_adresa")
+
+    def tx_formatted_address = column[String]("tx_formatted_address")
+
+    def tx_locality = column[String]("tx_locality")
+
+    def tx_postal_code = column[String]("tx_postal_code")
+
+    def int_address_count = column[Int]("int_address_count")
 
     def clob_geocode_json = column[Clob]("clob_geocode_json")
 
@@ -74,7 +82,8 @@ object KDB {
     def reportKey = foreignKey("id_report_fk", id_report, report)(_.id_report)
 
     def * = id_vlastnik ~ id_report ~ tx_pravny_vztah ~ int_por_cislo ~
-      tx_meno ~ tx_priezvisko ~ tx_rodeny ~ tx_adresa ~ clob_geocode_json ~ tx_psc ~ tx_stat ~
+      tx_meno ~ tx_priezvisko ~ tx_rodeny ~ tx_adresa ~ tx_formatted_address ~ tx_locality ~ tx_postal_code ~
+      int_address_count ~ clob_geocode_json ~ tx_psc ~ tx_stat ~
       int_podiel1 ~ int_podiel2 ~ dt_narodenie ~ tx_ico ~ tx_plomba ~ tx_nadobudnutie ~ tx_poznamky
 
   }

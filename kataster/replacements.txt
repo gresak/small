@@ -1,8 +1,14 @@
 KYS.LIESKOVEC::KYSUCKÝ LIESKOVEC
 KNM::KYSUCKÉ NOVÉ MESTO
-KYS.NOVÉ MESTO::KYSUCKÉ NOVÉ MESTO
+KYS.(N.|NOVÉ).?MESTO::KYSUCKÉ NOVÉ MESTO
 POVA.SKÁ BYSTRICA::POVAŽSKÁ BYSTRICA
-UL.::
+LICHARDUSOVÁ::LICHARDOVA
+VLCINCE::
+UL\.::
 OBDOJA::ODBOJA
-č\.:: 
+\s*,\s*:: 
+\s+(SR|ČR)(\s*|$)::
+[CČcč]\.?[Ss]?\.\s*(?=\d):: 
+(?<=^|\s)(ING|JUDR|č|s)[\s\.]+::
 \s{2,}:: 
+^\s+::
