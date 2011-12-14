@@ -7,10 +7,10 @@ import sk.gresak.domain.{ResponseG, AddressG}
 
 object Geocodes {
 
-  val params1: String = "json?bounds=49.20414,18.499603|49.537687,18.935623&region=sk&language=sk&sensor=false&address="
+  val params1: String = "json?region=sk&language=sk&sensor=false&address="
   val reqPart1: Request = :/("maps.googleapis.com") / ("maps/api/geocode/")
 
-  def reloadByIdReport(id_report: Long) = {
+  def downloadGeocodesByIdReport(id_report: Long) = {
     val ownersGeocodes: List[(Long, String)] = readOwners(id_report) map {
       s =>
         val request: Request = reqPart1 / (params1 + Request.encode_%(s._2))
@@ -20,13 +20,26 @@ object Geocodes {
     updateOwnersGeocodes(ownersGeocodes)
   }
 
-  def updateFormattedAddress(id_report: Long) = {
+  def updateAddressFromGeocodes(id_report: Long) = {
     val geocodes = readGeocodes(id_report)
     implicit val formats = DefaultFormats
     val addresses = geocodes.map {
-      r =>
-        val res: List[AddressG] = r._2.results
-        (r._1, if (res.size == 1) res(0).formatted_address else null)
+      case (idOwner, response) => if (response.results.length == 0) (idOwner, null, null, null, 0)
+      else {
+        val addressG: AddressG = selectAddressG(response)
+        val formatted: String = addressG.formatted_address
+        var locality: String = null
+        var postalCode: String = null
+        //var (locality: String, postalCode: String) = (null, null)
+        for (comp <- addressG.address_components) {
+          comp.types match {
+            case List("locality", _*) => locality = comp.short_name
+            case List("postal_code", _*) => postalCode = comp.short_name
+            case _ => Unit
+          }
+        }
+        (idOwner, formatted, locality, postalCode, response.results.length)
+      }
     }
     updateOwnersFormattedAddresses(addresses)
   }
@@ -40,30 +53,11 @@ object Geocodes {
         val skResults = results.toStream.filter {
           adr =>
             adr.address_components.filter({
-              comp => comp.types(0) == "country" && comp.short_name == "SK"
+              comp => comp.types.size > 0 && comp.types(0) == "country" && comp.short_name == "SK"
             }).isEmpty != true
         }
         if (skResults.isEmpty) results(0) else skResults.head
       }
     }
-  }
-
-  def updateAddressFromGeocodes(id_report: Long) = {
-    val geocodes = readGeocodes(id_report)
-    implicit val formats = DefaultFormats
-    val addresses = geocodes.map {
-      case (idOwner, response) => if (response.results.length == 0) (idOwner, null, null, null, 0)
-      else {
-        val addressG: AddressG = selectAddressG(response)
-        val formatted: String = addressG.formatted_address
-        val localities = addressG.address_components.filter(comp => comp.types(0) == "locality")
-        val postalCodes = addressG.address_components.filter(comp => comp.types(0) == "postal_code")
-        (idOwner, formatted,
-          if (localities.isEmpty) null else localities(0).short_name,
-          if (postalCodes.isEmpty) null else postalCodes(0).short_name,
-          response.results.length)
-      }
-    }
-    updateOwnersFormattedAddresses(addresses)
   }
 }

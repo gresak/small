@@ -11,7 +11,11 @@ class OwnershipReport(reportPath: String, replacementsPath: String) {
 
   lazy val text: String = new PdfText(reportPath).txt
   lazy val source: BufferedSource = Source.fromFile("C:\\Users\\edo\\Documents\\Urbariat\\xxx.txt")
-  lazy val textTest: String = source.mkString
+  lazy val textTest: String = {
+    val x = source.mkString
+    source.close()
+    x
+  }
   lazy val replacements: List[(Regex, String)] = loadReplacements(replacementsPath)
 
   val actualizationRE = """Aktualizácia\skatastrálneho\sportálu:\s(\d\d\.\d\d\.\d\d\d\d)""".r
@@ -21,14 +25,19 @@ class OwnershipReport(reportPath: String, replacementsPath: String) {
   val partSplitRE = """(?s)\r\nČASŤ\s[A-K]:.*?\n""".r
   val ownerSplitRE = """(?s)\r\n(?=Účastník\správneho\svzťahu:.*\r\n\d+\s)""".r
 
-  def loadReplacements(path: String) = Source.fromFile(path).getLines().map(s => {
-    s.split("""::""") match {
-      case Array(x, y) => (new Regex(x), y)
-      case Array(x) => (new Regex(x), "")
-      case _ => throw new Exception("Error in replacements file: " + path)
+  def loadReplacements(path: String) = {
+    val src: BufferedSource = Source.fromFile(path)
+    val repl = src.getLines().map(s => {
+      s.split("""::""") match {
+        case Array(x, y) => (new Regex(x), y)
+        case Array(x) => (new Regex(x), "")
+        case _ => throw new Exception("Error in replacements file: " + path)
+      }
     }
+    ).toList
+    src.close()
+    repl
   }
-  ).toList
 
   private def extractDates: (Timestamp, Date) = {
     val actualizedStr = actualizationRE findFirstMatchIn text match {
@@ -50,7 +59,7 @@ class OwnershipReport(reportPath: String, replacementsPath: String) {
     val r = extractDates
     val sqlCreated: Timestamp = r._1
     val sqlActualized: Date = r._2
-    val id = new LoadDAO insertRawReport(reportPath, sqlActualized, sqlCreated, text)
+    val id = LoadDAO.insertRawReport(reportPath, sqlActualized, sqlCreated, text)
     println("\nInserted id = " + id)
     id
   }

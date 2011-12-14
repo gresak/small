@@ -4,8 +4,10 @@
       <w>adresa</w>
       <w>aktualizacia</w>
       <w>cislo</w>
+      <w>extr</w>
       <w>geocodes</w>
       <w>kataster</w>
+      <w>konsolidacia</w>
       <w>meno</w>
       <w>nacitanie</w>
       <w>nadobudnutie</w>
@@ -17,6 +19,7 @@
       <w>poznamky</w>
       <w>pravny</w>
       <w>priezvisko</w>
+      <w>repl</w>
       <w>restx</w>
       <w>resty</w>
       <w>riadok</w>

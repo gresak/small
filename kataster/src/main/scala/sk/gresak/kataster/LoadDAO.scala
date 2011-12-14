@@ -6,7 +6,7 @@ import KDB._
 import javax.sql.rowset.serial.SerialClob
 import java.sql.{Timestamp, Date}
 
-class LoadDAO extends BaseDAO {
+object LoadDAO extends BaseDAO {
 
   def insertRawReport(fName: String, actualized: Date, created: Timestamp, reportStr: String): Long = withSession {
     import report._
