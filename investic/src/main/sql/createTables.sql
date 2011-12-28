@@ -1,6 +1,13 @@
 drop table if exists TRANSACTION;
+drop table if exists CASH_TRANSACTION;
 drop table if exists EXECUTION_PLACE;
+drop table if exists CASH_TRANSACTION_PURPOSE;
+drop table if exists INVESTMENT_SERVICE;
+drop table if exists CLAIM_DEBT;
+drop table if exists CLAIM_DEBT_TYPE;
 drop table if exists PARTY;
+drop table if exists ACCOUNT;
+drop table if exists ACCOUNT_TYPE;
 drop table if exists FINANCIAL_INSTRUMENT;
 drop table if exists PORTFOLIO;
 drop table if exists MANAGEMENT_TYPE;
@@ -29,6 +36,7 @@ create table COMPANY
    eff_to DATETIME,
    name VARCHAR(100),
    ico VARCHAR(10),
+   dic VARCHAR(10),
    id_address bigint unsigned,
    email VARCHAR(100),
    phone VARCHAR(25),
@@ -40,11 +48,15 @@ create table PERSON
    id_person SERIAL,
    eff_from DATETIME,
    eff_to DATETIME,
-   name VARCHAR(100),
-   surname VARCHAR(100),
+   name VARCHAR(50),
+   surname VARCHAR(50),
+   salutation VARCHAR(50),
+   title_before VARCHAR(50),
+   title_after VARCHAR(50),
    birth_date DATETIME,
    birth_number VARCHAR(10),
    state_card_id VARCHAR(20),
+   dic VARCHAR(10),
    id_address bigint unsigned,
    email VARCHAR(100),
    phone VARCHAR(25),
@@ -96,6 +108,7 @@ create table MANAGEMENT_TYPE
    name VARCHAR(50),
    primary key (id_management_type)   
 );
+INSERT INTO MANAGEMENT_TYPE (name) VALUES ('Default portfolio type'); --created just as a container for client's transactions when client is managging his or her portfolio outside the investment company
 INSERT INTO MANAGEMENT_TYPE (name) VALUES ('Managed as customer service');
 INSERT INTO MANAGEMENT_TYPE (name) VALUES ('Customer managed');
 create table PORTFOLIO_STRATEGY
@@ -114,9 +127,44 @@ create table PORTFOLIO
    eff_from DATETIME,
    eff_to DATETIME,
    id_management_type bigint unsigned,
+   id_portfolio_strategy bigint unsigned,
    primary key (id_portfolio),   
    foreign key (id_client) references CLIENT (id_client),
-   foreign key (id_management_type) REFERENCES MANAGEMENT_TYPE (id_management_type)
+   foreign key (id_management_type) REFERENCES MANAGEMENT_TYPE (id_management_type),
+   foreign key (id_portfolio_strategy) REFERENCES PORTFOLIO_STRATEGY (id_portfolio_strategy)
+);
+create table FINANCIAL_INSTRUMENT
+(
+   id_financial_instrument SERIAL,
+   eff_from DATETIME,
+   eff_to DATETIME,
+   name VARCHAR(100),
+   short_name VARCHAR(12),
+   isin VARCHAR(12),
+   bloomberg_ticker VARCHAR(10),
+   instrument_currency_code VARCHAR(3),
+   primary key (id_financial_instrument)
+);
+create table ACCOUNT_TYPE
+(
+   id_account_type SERIAL,
+   name VARCHAR(50),
+   primary key (id_account_type)   
+);
+INSERT INTO ACCOUNT_TYPE  (name) VALUES ('Cash account');
+INSERT INTO ACCOUNT_TYPE (name) VALUES ('Security account');
+create table ACCOUNT
+(
+   id_account SERIAL,
+   id_account_type bigint unsigned,
+   id_financial_instrument bigint unsigned,
+   id_portfolio bigint unsigned,
+   symbol VARCHAR(10),
+   unit_count decimal(18,4),
+   primary key (id_account),
+   foreign key (id_account_type) references ACCOUNT_TYPE (id_account_type),
+   foreign key (id_financial_instrument) references FINANCIAL_INSTRUMENT (id_financial_instrument),
+   foreign key (id_portfolio) references PORTFOLIO (id_portfolio)
 );
 create table PARTY
 (
@@ -133,21 +181,8 @@ create table PARTY
    is_broker INTEGER,
    is_bank INTEGER,
    is_custodian INTEGER,
-   execution_place VARCHAR(100),
    note VARCHAR(1000),
    primary key (id_party)
-);
-create table FINANCIAL_INSTRUMENT
-(
-   id_financial_instrument SERIAL,
-   eff_from DATETIME,
-   eff_to DATETIME,
-   name VARCHAR(100),
-   short_name VARCHAR(12),
-   isin VARCHAR(12),
-   bloomberg_ticker VARCHAR(10),
-   instrument_currency_code VARCHAR(3),
-   primary key (id_financial_instrument)
 );
 create table EXECUTION_PLACE
 (
@@ -162,7 +197,8 @@ create table TRANSACTION
    id_transaction SERIAL,
    id_financial_instrument bigint unsigned,
    reference_id varchar(30),
-   id_portfolio bigint unsigned,
+   id_account bigint unsigned,
+   id_parent_transaction bigint unsigned,
    transaction_datetime DATETIME,
    is_buy INTEGER,
    transaction_currency_code VARCHAR(3),
@@ -171,17 +207,83 @@ create table TRANSACTION
    transaction_volume decimal(18,4),
    accrued_interest decimal(18,4),
    third_party_fee decimal(18,4),
-   administration_fee decimal(18,4),
+   own_fee decimal(18,4),
    id_party_contra bigint unsigned,
    id_party_agent bigint unsigned,
    id_execution_place bigint unsigned,
+   submitted_to VARCHAR(100),
    settlement_date DATETIME,
    instrument_settlement_date DATETIME,
    note VARCHAR(1000),
    primary key (id_transaction),
    foreign key (id_financial_instrument) references FINANCIAL_INSTRUMENT (id_financial_instrument),
-   foreign key (id_portfolio) references PORTFOLIO (id_portfolio),
+   foreign key (id_account) references ACCOUNT (id_account),
+   foreign key (id_parent_transaction) references TRANSACTION (id_transaction),
    foreign key (id_party_contra) references PARTY (id_party),
    foreign key (id_party_agent) references PARTY (id_party),
    foreign key (id_execution_place) references EXECUTION_PLACE (id_execution_place)
+);
+create table CLAIM_DEBT_TYPE
+(
+   id_claim_debt_type SERIAL,
+   name VARCHAR(50),
+   primary key (id_claim_debt_type)
+);
+create table CLAIM_DEBT
+(
+   id_claim_debt SERIAL,
+   id_claim_debt_type bigint unsigned,
+   id_account bigint unsigned,
+   id_portfolio bigint unsigned,
+   amount decimal(18,4),
+   id_party_contra bigint unsigned,
+   settlement_date DATETIME,
+   note VARCHAR(1000),
+   primary key (id_claim_debt),
+   foreign key (id_claim_debt_type) references CLAIM_DEBT_TYPE (id_claim_debt_type),
+   foreign key (id_account) references ACCOUNT (id_account),
+   foreign key (id_party_contra) references PARTY (id_party),
+   foreign key (id_portfolio) references PORTFOLIO (id_portfolio)
+);
+create table CASH_TRANSACTION_PURPOSE
+(
+   id_cash_transaction_purpose SERIAL,
+   name VARCHAR(50),
+   primary key (id_cash_transaction_purpose)   
+);
+INSERT INTO CASH_TRANSACTION_PURPOSE  (name) VALUES ('Purpose 1');
+INSERT INTO CASH_TRANSACTION_PURPOSE (name) VALUES ('Purpose 2');
+create table INVESTMENT_SERVICE
+(
+   id_investment_service SERIAL,
+   name VARCHAR(50),
+   primary key (id_investment_service)   
+);
+INSERT INTO INVESTMENT_SERVICE  (name) VALUES ('Investment service 1');
+INSERT INTO INVESTMENT_SERVICE (name) VALUES ('Investment service 2');
+create table CASH_TRANSACTION
+(
+   id_cash_transaction SERIAL,
+   reference_id varchar(30),
+   id_account bigint unsigned,
+   specific_symbol VARCHAR(10),
+   variable_symbol VARCHAR(10),
+   constant_symbol VARCHAR(4),
+   id_cash_transaction_purpose bigint unsigned,
+   id_investment_service bigint unsigned,
+   is_external_io INTEGER,
+   id_parent_cash_transaction bigint unsigned,
+   cash_transaction_datetime DATETIME,
+   cash_transaction_currency_code VARCHAR(3),
+   amount decimal(18,4),
+   id_party_contra bigint unsigned,
+   settlement_date DATETIME,
+   note1 VARCHAR(1000),
+   note2 VARCHAR(1000),
+   primary key (id_cash_transaction),
+   foreign key (id_account) references ACCOUNT (id_account),
+   foreign key (id_cash_transaction_purpose) references CASH_TRANSACTION_PURPOSE (id_cash_transaction_purpose),
+   foreign key (id_investment_service) references INVESTMENT_SERVICE (id_investment_service),
+   foreign key (id_parent_cash_transaction) references CASH_TRANSACTION (id_cash_transaction),
+   foreign key (id_party_contra) references PARTY (id_party)
 );
