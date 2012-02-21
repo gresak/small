@@ -1,3 +1,5 @@
-Various ad hoc scripts:
-kataster ... scala
-hore ... SAS
+Administrative software for small cooperatives of forest owners. 
+Data coming from public source domain (Kataster of Slovak republic) are cleansed and prepared for usage by cooperatives. 
+Google geocode API is used to clean address data from Kataster.
+Currently there is no documentation. Prospective user should ask for help here: eduard.gresak@gmail.com.
+Main language of the project: scala
