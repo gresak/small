@@ -93,7 +93,7 @@ object KDB {
 
   }
 
-  object konsolidacia extends Table[(Long, Int, String, String, String, String, Int, Int, String, Int, Int, Int, String)]("konsolidacia") {
+  object konsolidacia extends Table[(Long, Int, String, String, String, String, Int, Int, String, Int, Int, Int, String, Int)]("konsolidacia") {
 
     def id_konsolidacia = column[Long]("id_konsolidacia", O.PrimaryKey, O.AutoInc)
 
@@ -121,8 +121,10 @@ object KDB {
 
     def tx_poznamka = column[String]("tx_poznamka")
 
+    def int_koniec = column[Int]("int_koniec")
+
     def * = id_konsolidacia ~ int_por_cislo ~ tx_meno ~ tx_priezvisko ~ tx_adresa ~ tx_stat ~
-      int_podiel1 ~ int_podiel2 ~ tx_nadobudnutie ~ int_zadrzat ~ int_hotovost ~ int_zomrel ~ tx_poznamka
+      int_podiel1 ~ int_podiel2 ~ tx_nadobudnutie ~ int_zadrzat ~ int_hotovost ~ int_zomrel ~ tx_poznamka ~ int_koniec
 
   }
 
